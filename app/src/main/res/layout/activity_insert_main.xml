@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".insert_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:gravity="center|left"
+                    android:text="제목" />
+
+                <EditText
+                    android:id="@+id/etWriteTitle"
+                    android:layout_width="400dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/edittext_rounded_corner_rectangle"
+                    android:ems="10"
+                    android:hint="제목을 입력하세요."
+                    android:inputType="textPersonName"
+                    android:textCursorDrawable="@drawable/edit_text_cursor"
+                    />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:gravity="center|left"
+                    android:text="지역"
+                    android:layout_marginTop="30dp"
+                    />
+
+                <EditText
+                    android:id="@+id/etWriteLocation"
+                    android:layout_width="400dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/edittext_rounded_corner_rectangle"
+                    android:ems="10"
+                    android:hint="지역을 입력하세요."
+                    android:inputType="textPersonName"
+                    android:textCursorDrawable="@drawable/edit_text_cursor"
+                    />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:gravity="center|left"
+                    android:text="글내용"
+                    android:layout_marginTop="30dp"
+                    />
+
+                <EditText
+                    android:id="@+id/etWriteContent"
+                    android:layout_width="400dp"
+                    android:layout_height="201dp"
+                    android:background="@drawable/edittext_rounded_corner_rectangle"
+                    android:ems="10"
+                    android:hint="내용을 입력하세요."
+                    android:inputType="none"
+                    android:textCursorDrawable="@drawable/edit_text_cursor"
+                     />
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:gravity="center|left"
+                    android:text="방이름 설정"
+                    android:layout_marginTop="30dp"
+                    />
+
+                <EditText
+                    android:id="@+id/etWriteRoom"
+                    android:layout_width="400dp"
+                    android:layout_height="201dp"
+                    android:background="@drawable/edittext_rounded_corner_rectangle"
+                    android:ems="10"
+                    android:hint="ex) 방이름1,방이름2,방이름3"
+                    android:inputType="none"
+                    android:textCursorDrawable="@drawable/edit_text_cursor"
+                    />
+
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:gravity="center|left"
+                    android:text="사진"
+                    android:layout_marginTop="30dp"
+                    />
+
+                <EditText
+                    android:id="@+id/etWritePhoto"
+                    android:layout_width="400dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/edittext_rounded_corner_rectangle"
+                    android:ems="10"
+                    android:hint="사진명을 입력하세요."
+                    android:inputType="textPersonName"
+                    android:textCursorDrawable="@drawable/edit_text_cursor"
+                    />
+
+                <Button
+                    android:id="@+id/btnWriteBT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="글작성하기" />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

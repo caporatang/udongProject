@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/imgDrum"
+        android:layout_width="185dp"
+        android:layout_height="152dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="130dp"
+        app:layout_constraintBottom_toTopOf="@+id/imgSing"
+        app:layout_constraintEnd_toStartOf="@+id/imgGuitar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/drum" />
+
+    <ImageView
+        android:id="@+id/imgGuitar"
+        android:layout_width="185dp"
+        android:layout_height="152dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/imgPiano"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgDrum"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/guitar" />
+
+    <ImageView
+        android:id="@+id/imgSing"
+        android:layout_width="185dp"
+        android:layout_height="152dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginBottom="248dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imgPiano"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgDrum"
+        app:srcCompat="@drawable/sing" />
+
+    <ImageView
+        android:id="@+id/imgPiano"
+        android:layout_width="185dp"
+        android:layout_height="152dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="248dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgSing"
+        app:layout_constraintTop_toBottomOf="@+id/imgGuitar"
+        app:srcCompat="@drawable/piano" />
+</androidx.constraintlayout.widget.ConstraintLayout>

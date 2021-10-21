@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Member_info">
+
+    <EditText
+        android:id="@+id/textName"
+        android:layout_width="250dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="81dp"
+        android:background="@drawable/edittext_rounded_corner_rectangle"
+        android:textCursorDrawable="@drawable/edit_text_cursor"
+        app:layout_constraintBottom_toTopOf="@+id/textView22"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <EditText
+        android:id="@+id/textTel"
+        android:layout_width="250dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="81dp"
+        android:background="@drawable/edittext_rounded_corner_rectangle"
+        android:textCursorDrawable="@drawable/edit_text_cursor"
+        app:layout_constraintBottom_toTopOf="@+id/btnDelete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="43dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="126dp"
+        android:layout_marginEnd="288dp"
+        android:text="이름"
+        app:layout_constraintBottom_toTopOf="@+id/textName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="275dp"
+        android:text="아이디"
+        app:layout_constraintBottom_toTopOf="@+id/textId"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textName" />
+
+    <EditText
+        android:id="@+id/textEmail"
+        android:layout_width="250dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="81dp"
+        android:background="@drawable/edittext_rounded_corner_rectangle"
+        android:textCursorDrawable="@drawable/edit_text_cursor"
+        app:layout_constraintBottom_toTopOf="@+id/textView24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="257dp"
+        android:text="핸드폰 번호"
+        app:layout_constraintBottom_toTopOf="@+id/textTel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textEmail" />
+
+    <TextView
+        android:id="@+id/textId"
+        android:layout_width="250dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="81dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/textView20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="289dp"
+        android:text="이메일"
+        app:layout_constraintBottom_toTopOf="@+id/textEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textId" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="224dp"
+        android:backgroundTint="#E80909"
+        android:text="탈퇴"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnUpdate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTel" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="196dp"
+        android:text="개인정보 수정"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnDelete"
+        app:layout_constraintTop_toBottomOf="@+id/textTel" />
+</androidx.constraintlayout.widget.ConstraintLayout>
